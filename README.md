@@ -1,5 +1,5 @@
 # cufQUMC
-CUDA Fortran version of QU-fitting with replica exchange MCMC method.
+CUDA Fortran version of QU-fitting with replica exchange MCMC method (parallel tempering).
 
 ## Prerequisites
 * Python 3
