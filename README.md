@@ -38,11 +38,19 @@ optional arguments:
   -t NTHREADS   Number of threads per block [1024].
 </pre>
 
-## Fitting Models
-* delta
-* gauss
-* tophat
-* osul17
+## Faraday components
+* "delta": Dirac delta function / Faraday thin source
+
+  $P(\lambda^2)=f_0 e^{2i(\theta_0+\phi_0\lambda^2)}$
+* "gauss": Gaussian function / Faraday component with Burn depolarization
+
+  $P(\lambda^2)=f_0 e^{-2\sigma_0^2\lambda^4} e^{2i(\theta_0+\phi_0\lambda^2)} $
+* "tophat": Tophat function
+
+  $P(\lambda^2)=f_0 \cfrac{\sin(2\delta\phi_0\lambda^2)}{4\delta\phi_0\lambda^2} e^{2i(\theta_0+\phi_0\lambda^2)}$
+* "osul17": O'Sullivan 2017 model. See Eq.2 in [O'Sullivan et al. (2017)](https://ui.adsabs.harvard.edu/abs/2017MNRAS.469.4034O/abstract)
+
+  $P(\lambda^2)=f_0 e^{-2\sigma_0^2\lambda^4} \cfrac{\sin(2\delta\phi_0\lambda^2)}{4\delta\phi_0\lambda^2} e^{2i(\theta_0+\phi_0\lambda^2)}$
 
 ## Notes
 This code runs QUMC and outputs parameter chains at beta=1.0 and chisq chains.
