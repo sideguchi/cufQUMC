@@ -37,6 +37,7 @@ optional arguments:
                 When activated, only "Nburnin", "Nsample", "OutputDir" and "Nthreads" are needed to specify.
   -t NTHREADS   Number of threads per block [1024].
 </pre>
+The maximum number of threads per block of recent GPUs is 1024 as long as their compute capability is 2.x and higher. Otherwise, specify the number of threads per block using "-t" option. See also [this page](https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#concurrent-kernel-execution).
 
 ## Faraday components
 * "delta": Dirac delta function / Faraday thin source
