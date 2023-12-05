@@ -16,7 +16,7 @@ Here, "cc" means Compute Capability and "cc80" is for NVIDIA A100. See [this pag
 ## Usage
 * run Python code to perform QUMC
 <pre>
-  $ python cufqumc.py [par_file]
+  $ python cufqumc.py <span><</span>options<span>></span>
 </pre>
 The format of data files is [frequency (in Hz), Stokes Q, Stokes U, error in Q, error in U] (five columns).
 <pre>
